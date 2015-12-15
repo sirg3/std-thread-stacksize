@@ -22,10 +22,10 @@
 
 #if defined(__i386__)
 
-# void ThreadTrampoline(void (*fp)(void *), void *arg, void *stack, size_t stackSize);
+# void ThreadTrampoline(void *arg, void (*fp)(void *), void *stack, size_t stackSize);
 #
 # Here's how we'll set up the stack. Having a stack frame isn't required, but
-# the spaceneeds to be there for alignment and it's much nicer.
+# the space needs to be there for alignment and it's much nicer.
 #
 # |----------|
 # | prev EIP |
@@ -57,12 +57,12 @@ _ThreadTrampoline:
     movl %esp, 4(%eax)
 
     # Copy the function argument to the new stack.
-    movl 8(%esp), %ecx
+    movl 4(%esp), %ecx
     movl %ecx, 0(%eax)
 
     # Swap our stack and the fake one, then call through to our target.
     xchg %eax, %esp
-    call *4(%eax)
+    call *8(%eax)
 
     # Reload the real stack pointer.
     movl 4(%esp), %esp

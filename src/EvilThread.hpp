@@ -122,10 +122,8 @@ namespace details {
 		    std::make_index_sequence<std::tuple_size<PackTy>::value - 1>());
 	}
 
-	extern "C" void ThreadTrampoline(void (*fp)(void *),
-	                                 void *arg,
-	                                 void *stack,
-	                                 std::size_t size);
+	extern "C" void ThreadTrampoline(
+	    void *arg, void (*fp)(void *), void *stack, std::size_t size);
 	void *AllocateStack(std::size_t size);
 	extern "C" void FreeStack(void *stack, std::size_t size);
 } // namespace details
@@ -169,8 +167,8 @@ std::thread create_thread(std::size_t stackSize, FP &&func, Args &&... args)
 		    details::decay_copy(std::forward<Args>(args))...);
 
 		result = std::thread(&details::ThreadTrampoline,
-		                     &details::thread_main<PackTy>,
 		                     pack.get(),
+		                     &details::thread_main<PackTy>,
 		                     stack,
 		                     stackSize);
 #if EVIL_HAS_EXCEPTIONS

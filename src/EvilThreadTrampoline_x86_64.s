@@ -22,7 +22,7 @@
 
 #if defined(__x86_64__)
 
-# void ThreadTrampoline(void (*fp)(void *), void *arg, void *stack, size_t stackSize);
+# void ThreadTrampoline(void *arg, void (*fp)(void *), void *stack, size_t stackSize);
 # rdi = fp
 # rsi = arg
 # rdx = stack
@@ -45,8 +45,7 @@ _ThreadTrampoline:
     movq %rdx, %rsp
     subq $32, %rsp
 
-    # Put the function argument where it needs to go and call our function.
-    xchg %rsi, %rdi
+    # Happily invoke the target.
     call *%rsi
 
     # Grab the original stack and size so that we can pass them off to the
