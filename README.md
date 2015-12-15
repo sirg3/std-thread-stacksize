@@ -15,9 +15,9 @@ It's probably a bad idea to use this in production code.
 
 ##Portability
 
-This has been lightly tested on OS X. Adding support for other platforms would
-require writing the appropriate trampoline function in assembly and functions to
-allocate and free 'stack' memory.
+This has been lightly tested on OS X and iOS. Adding support for other platforms
+would require writing the appropriate trampoline function in assembly and
+functions to allocate and free 'stack' memory.
 
 ## License
 
