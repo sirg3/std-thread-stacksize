@@ -10,6 +10,19 @@
 		D83404E91BDBFAC30086D9EB /* EvilThreadTrampoline_x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = D83404E81BDBFAC30086D9EB /* EvilThreadTrampoline_x86_64.s */; };
 		D83404EC1BDC1FBC0086D9EB /* EvilThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D83404EA1BDC1FBC0086D9EB /* EvilThread.cpp */; };
 		D83404EE1BDCA0720086D9EB /* EvilThreadTrampoline_i386.s in Sources */ = {isa = PBXBuildFile; fileRef = D83404ED1BDCA0720086D9EB /* EvilThreadTrampoline_i386.s */; };
+		D871BBA51C16B1D800EAC483 /* EvilThreadTrampoline_ARM64.s in Sources */ = {isa = PBXBuildFile; fileRef = D871BBA41C16B1D800EAC483 /* EvilThreadTrampoline_ARM64.s */; };
+		D871BBA61C16B1D800EAC483 /* EvilThreadTrampoline_ARM64.s in Sources */ = {isa = PBXBuildFile; fileRef = D871BBA41C16B1D800EAC483 /* EvilThreadTrampoline_ARM64.s */; };
+		D871BBA81C16B1F200EAC483 /* EvilThreadTrampoline_ARM.s in Sources */ = {isa = PBXBuildFile; fileRef = D871BBA71C16B1F200EAC483 /* EvilThreadTrampoline_ARM.s */; };
+		D871BBA91C16B1F200EAC483 /* EvilThreadTrampoline_ARM.s in Sources */ = {isa = PBXBuildFile; fileRef = D871BBA71C16B1F200EAC483 /* EvilThreadTrampoline_ARM.s */; };
+		D87341591C168B77002218CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D87341581C168B77002218CE /* main.m */; };
+		D873415C1C168B77002218CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D873415B1C168B77002218CE /* AppDelegate.m */; };
+		D873415F1C168B77002218CE /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = D873415E1C168B77002218CE /* ViewController.mm */; };
+		D87341621C168B77002218CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D87341601C168B77002218CE /* Main.storyboard */; };
+		D87341641C168B77002218CE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D87341631C168B77002218CE /* Images.xcassets */; };
+		D87341671C168B77002218CE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D87341651C168B77002218CE /* LaunchScreen.xib */; };
+		D873417A1C168E2C002218CE /* EvilThread.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D83404EA1BDC1FBC0086D9EB /* EvilThread.cpp */; };
+		D873417B1C168E31002218CE /* EvilThreadTrampoline_x86_64.s in Sources */ = {isa = PBXBuildFile; fileRef = D83404E81BDBFAC30086D9EB /* EvilThreadTrampoline_x86_64.s */; };
+		D873417C1C168E33002218CE /* EvilThreadTrampoline_i386.s in Sources */ = {isa = PBXBuildFile; fileRef = D83404ED1BDCA0720086D9EB /* EvilThreadTrampoline_i386.s */; };
 		D8F731011BDB182200E0791D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D8F731001BDB182200E0791D /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -30,11 +43,30 @@
 		D83404EA1BDC1FBC0086D9EB /* EvilThread.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EvilThread.cpp; sourceTree = "<group>"; };
 		D83404EB1BDC1FBC0086D9EB /* EvilThread.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EvilThread.hpp; sourceTree = "<group>"; };
 		D83404ED1BDCA0720086D9EB /* EvilThreadTrampoline_i386.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = EvilThreadTrampoline_i386.s; sourceTree = "<group>"; };
-		D8F730FD1BDB182200E0791D /* threads */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; name = threads; path = StackSize; sourceTree = BUILT_PRODUCTS_DIR; };
+		D871BBA41C16B1D800EAC483 /* EvilThreadTrampoline_ARM64.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = EvilThreadTrampoline_ARM64.s; sourceTree = "<group>"; };
+		D871BBA71C16B1F200EAC483 /* EvilThreadTrampoline_ARM.s */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.asm; path = EvilThreadTrampoline_ARM.s; sourceTree = "<group>"; };
+		D87341541C168B77002218CE /* iOSStackSize.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSStackSize.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D87341571C168B77002218CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D87341581C168B77002218CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D873415A1C168B77002218CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D873415B1C168B77002218CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D873415D1C168B77002218CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D873415E1C168B77002218CE /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
+		D87341611C168B77002218CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D87341631C168B77002218CE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D87341661C168B77002218CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		D8F730FD1BDB182200E0791D /* StackSize */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StackSize; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8F731001BDB182200E0791D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = ../main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D87341511C168B77002218CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8F730FA1BDB182200E0791D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +77,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D87341551C168B77002218CE /* iOSStackSize */ = {
+			isa = PBXGroup;
+			children = (
+				D873415A1C168B77002218CE /* AppDelegate.h */,
+				D873415B1C168B77002218CE /* AppDelegate.m */,
+				D873415D1C168B77002218CE /* ViewController.h */,
+				D873415E1C168B77002218CE /* ViewController.mm */,
+				D87341601C168B77002218CE /* Main.storyboard */,
+				D87341631C168B77002218CE /* Images.xcassets */,
+				D87341651C168B77002218CE /* LaunchScreen.xib */,
+				D87341561C168B77002218CE /* Supporting Files */,
+			);
+			path = iOSStackSize;
+			sourceTree = "<group>";
+		};
+		D87341561C168B77002218CE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D87341571C168B77002218CE /* Info.plist */,
+				D87341581C168B77002218CE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		D8F730F41BDB182200E0791D = {
 			isa = PBXGroup;
 			children = (
 				D8F730FF1BDB182200E0791D /* src */,
+				D87341551C168B77002218CE /* iOSStackSize */,
 				D8F730FE1BDB182200E0791D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,7 +113,8 @@
 		D8F730FE1BDB182200E0791D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D8F730FD1BDB182200E0791D /* threads */,
+				D8F730FD1BDB182200E0791D /* StackSize */,
+				D87341541C168B77002218CE /* iOSStackSize.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,6 +125,8 @@
 				D8F731001BDB182200E0791D /* main.cpp */,
 				D83404ED1BDCA0720086D9EB /* EvilThreadTrampoline_i386.s */,
 				D83404E81BDBFAC30086D9EB /* EvilThreadTrampoline_x86_64.s */,
+				D871BBA71C16B1F200EAC483 /* EvilThreadTrampoline_ARM.s */,
+				D871BBA41C16B1D800EAC483 /* EvilThreadTrampoline_ARM64.s */,
 				D83404EA1BDC1FBC0086D9EB /* EvilThread.cpp */,
 				D83404EB1BDC1FBC0086D9EB /* EvilThread.hpp */,
 			);
@@ -76,6 +136,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D87341531C168B77002218CE /* iOSStackSize */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D87341741C168B78002218CE /* Build configuration list for PBXNativeTarget "iOSStackSize" */;
+			buildPhases = (
+				D87341501C168B77002218CE /* Sources */,
+				D87341511C168B77002218CE /* Frameworks */,
+				D87341521C168B77002218CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSStackSize;
+			productName = iOSStackSize;
+			productReference = D87341541C168B77002218CE /* iOSStackSize.app */;
+			productType = "com.apple.product-type.application";
+		};
 		D8F730FC1BDB182200E0791D /* StackSize */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8F731041BDB182200E0791D /* Build configuration list for PBXNativeTarget "StackSize" */;
@@ -90,7 +167,7 @@
 			);
 			name = StackSize;
 			productName = threads;
-			productReference = D8F730FD1BDB182200E0791D /* threads */;
+			productReference = D8F730FD1BDB182200E0791D /* StackSize */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -102,6 +179,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Joe Ranieri";
 				TargetAttributes = {
+					D87341531C168B77002218CE = {
+						CreatedOnToolsVersion = 6.4;
+					};
 					D8F730FC1BDB182200E0791D = {
 						CreatedOnToolsVersion = 7.1;
 					};
@@ -113,6 +193,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = D8F730F41BDB182200E0791D;
 			productRefGroup = D8F730FE1BDB182200E0791D /* Products */;
@@ -120,25 +201,110 @@
 			projectRoot = "";
 			targets = (
 				D8F730FC1BDB182200E0791D /* StackSize */,
+				D87341531C168B77002218CE /* iOSStackSize */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		D87341521C168B77002218CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D87341621C168B77002218CE /* Main.storyboard in Resources */,
+				D87341671C168B77002218CE /* LaunchScreen.xib in Resources */,
+				D87341641C168B77002218CE /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		D87341501C168B77002218CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D873415F1C168B77002218CE /* ViewController.mm in Sources */,
+				D873417B1C168E31002218CE /* EvilThreadTrampoline_x86_64.s in Sources */,
+				D873417C1C168E33002218CE /* EvilThreadTrampoline_i386.s in Sources */,
+				D873415C1C168B77002218CE /* AppDelegate.m in Sources */,
+				D87341591C168B77002218CE /* main.m in Sources */,
+				D871BBA91C16B1F200EAC483 /* EvilThreadTrampoline_ARM.s in Sources */,
+				D871BBA61C16B1D800EAC483 /* EvilThreadTrampoline_ARM64.s in Sources */,
+				D873417A1C168E2C002218CE /* EvilThread.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D8F730F91BDB182200E0791D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D83404EE1BDCA0720086D9EB /* EvilThreadTrampoline_i386.s in Sources */,
+				D871BBA81C16B1F200EAC483 /* EvilThreadTrampoline_ARM.s in Sources */,
 				D8F731011BDB182200E0791D /* main.cpp in Sources */,
 				D83404E91BDBFAC30086D9EB /* EvilThreadTrampoline_x86_64.s in Sources */,
+				D871BBA51C16B1D800EAC483 /* EvilThreadTrampoline_ARM64.s in Sources */,
 				D83404EC1BDC1FBC0086D9EB /* EvilThread.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXVariantGroup section */
+		D87341601C168B77002218CE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87341611C168B77002218CE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D87341651C168B77002218CE /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D87341661C168B77002218CE /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		D87341751C168B78002218CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INFOPLIST_FILE = iOSStackSize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D87341761C168B78002218CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = iOSStackSize/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		D8F731021BDB182200E0791D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -239,6 +405,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D87341741C168B78002218CE /* Build configuration list for PBXNativeTarget "iOSStackSize" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D87341751C168B78002218CE /* Debug */,
+				D87341761C168B78002218CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D8F730F81BDB182200E0791D /* Build configuration list for PBXProject "StackSize" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -21,28 +21,25 @@
 //
 
 #include "EvilThread.hpp"
-#include <mach/mach_init.h>
-#include <mach/mach_vm.h>
+#include <mach/mach.h>
 
 void *evil::details::AllocateStack(std::size_t size)
 {
-	mach_vm_address_t addr = 0xB0000000; // PTHREAD_STACK_HINT
-	int kr = mach_vm_allocate(mach_task_self(),
-	                          &addr,
-	                          size,
-	                          VM_MAKE_TAG(VM_MEMORY_STACK) | VM_FLAGS_ANYWHERE);
+	vm_address_t addr = 0xB0000000; // PTHREAD_STACK_HINT
+	int kr = vm_allocate(mach_task_self(),
+	                     &addr,
+	                     size,
+	                     VM_MAKE_TAG(VM_MEMORY_STACK) | VM_FLAGS_ANYWHERE);
 	if (kr != KERN_SUCCESS) return nullptr;
 
 	// Use one page for a guard page.
-	(void)mach_vm_protect(
-	    mach_task_self(), addr, vm_page_size, FALSE, VM_PROT_NONE);
+	(void)vm_protect(mach_task_self(), addr, vm_page_size, FALSE, VM_PROT_NONE);
 
 	return reinterpret_cast<void *>(addr + size);
 }
 
 void evil::details::FreeStack(void *stack, std::size_t size)
 {
-	(void)mach_vm_deallocate(mach_task_self(),
-	                         reinterpret_cast<mach_vm_address_t>(stack) - size,
-	                         size);
+	(void)vm_deallocate(
+	    mach_task_self(), reinterpret_cast<vm_address_t>(stack) - size, size);
 }
